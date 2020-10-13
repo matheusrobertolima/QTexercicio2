@@ -12,9 +12,9 @@ public class ProcessadorTest {
 	public void testProcessador () {
 		
 		Fatura fatura = new Fatura ("998877665", "Matheus", 1500);
-		Boleto boleto1 = new Boleto ("123456789", "01/01/2020", 500.00);
-		Boleto boleto2 = new Boleto ("987654321", "02/01/2020", 400.00);
-		Boleto boleto3 = new Boleto ("135792468", "03/01/2020", 600.00);
+		Boleto boleto1 = new Boleto ("123456789", "01/01/2020", 1000.00);
+		Boleto boleto2 = new Boleto ("987654321", "02/01/2020", 500.00);
+		Boleto boleto3 = new Boleto ("135792468", "03/01/2020", 250.00);
 
 		
 		Processador processador = new Processador();
