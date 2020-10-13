@@ -11,10 +11,11 @@ public class ProcessadorTest {
 	@Test
 	public void testProcessador () {
 		
-		Fatura fatura = new Fatura ("998877665", "Matheus", 1600);
+		Fatura fatura = new Fatura ("998877665", "Matheus", 3300);
 		Boleto boleto1 = new Boleto ("123456789", "01/01/2020", 100.00);
 		Boleto boleto2 = new Boleto ("987654321", "02/01/2020", 200.00);
 		Boleto boleto3 = new Boleto ("135792468", "03/01/2020", 1000.00);
+		Boleto boleto4 = new Boleto ("873282984", "04/01/2020", 2000.00);
 
 		
 		Processador processador = new Processador();
@@ -23,6 +24,7 @@ public class ProcessadorTest {
 		processador.addBoleto(boleto1);
 		processador.addBoleto(boleto2);
 		processador.addBoleto(boleto3);
+		processador.addBoleto(boleto4);
 		processador.getValorTotal();
 		
 		double somaBoletos = processador.getValorTotal();
